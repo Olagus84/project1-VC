@@ -56,7 +56,6 @@ div.records{
     grid-template: 
     "left right";
     border-bottom: 1px solid black;;
-    align-content: space-around;
 }
 div.alma-mater{
     grid-area: left;
@@ -71,13 +70,7 @@ div.victims{
         "right";
     }
 }
-
-footer{
-    flex: 2;
-}
 footer ul{
     text-align: center;
     list-style-type: none;
 }
-
-
