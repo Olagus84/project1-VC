@@ -1,0 +1,83 @@
+
+.container{
+    margin: 0px 20px;
+    background-color: #caafc8;
+}
+body{
+    background: #756574;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    padding: 10px;
+    text-align: justify;
+}
+h2, h3, h4{
+    text-align: center;
+}
+header{
+    display: grid;
+    grid-template:
+    "A A"
+    "B C";
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+header h1{
+    margin: 20px;
+    grid-area: A;
+    border-bottom: 1px solid black;
+    font-style: italic;
+}
+header img{
+    grid-area: B;
+    margin: 20px;
+    height: 250px;
+}
+header .profile{
+    grid-area: C;
+    
+}
+@media (max-width: 900px) {
+    header{
+        grid-template:
+        "A"
+        "B"
+        "C";
+    }
+    header img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+div.records{
+    display: grid;
+    grid-template: 
+    "left right";
+    border-bottom: 1px solid black;;
+    align-content: space-around;
+}
+div.alma-mater{
+    grid-area: left;
+}
+div.victims{
+    grid-area: right;
+}
+@media (max-width: 700px) {
+    div.records{
+        grid-template:
+        "left"
+        "right";
+    }
+}
+
+footer{
+    flex: 2;
+}
+footer ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+
